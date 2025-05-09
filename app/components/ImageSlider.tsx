@@ -1,51 +1,25 @@
-"use client"; // If using App Router
+import { Geist, Geist_Mono } from "next/font/google";
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-import Slider from "react-slick";
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
-const images = [
-  {
-    src: "istockphoto-172625334-612x612.jpg",
-    title: "Graphic Design"
-  },
-  {
-    src: "pexels-shvetsa-3746149.jpg",
-    title: "Photography"
-  },
-  {
-    src: "pexels-shvetsa-3746149.jpg",
-    title: "Branding"
-  }
-];
-
-function ImageSlider() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000
-  };
-
+export default function ImageSlider() {
   return (
-    <div className="relative w-full h-screen pt-16 bg-black">
-      <Slider {...settings}>
-        {images.map((img, idx) => (
-          <div key={idx} className="relative">
-            <img
-              src={img.src}
-              alt={img.title}
-              className="w-full h-screen object-cover"
-            />
-            <div className="absolute bottom-80 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent text-yellow-500 text-3xl md:text-5xl font-bold p-6 md:p-12 uppercase">
-              {img.title}
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
+    <>
+      <div className="relative">
+        <img src="pexels-shvetsa-3746149.jpg" alt="" />
+      </div>
+      <div className="flex justify-center ">
+        <div className="absolute bottom-72 text-center border-b-2 w-10/12">
+          <h1 className="text-6xl ml-32 font-extrabold mr-32 text-green-700">Enter a world of <span className="text-yellow-500">Photos</span> & Amazing <span className="text-yellow-500">Awards</span></h1>
+        </div>
+      </div>
+    </>
+  )
 }
-
-export default ImageSlider;

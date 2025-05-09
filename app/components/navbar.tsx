@@ -22,7 +22,7 @@ export default function Navbar() {
           href="/"
           className="text-yellow-500 text-3xl font-extrabold tracking-widest transform transition-transform duration-500 hover:scale-105"
         >
-          Atech Media
+          <img src="atech.png" width={50} alt="" />
         </Link>
 
         {/* Nav Items - ONLY visible on large screens */}
