@@ -15,11 +15,14 @@ export default function ImageSlider() {
       <div className="relative">
         <img src="pexels-shvetsa-3746149.jpg" alt="" />
       </div>
-      <div className="flex justify-center ">
-        <div className="absolute bottom-72 text-center border-b-2 w-10/12">
-          <h1 className="text-6xl ml-32 font-extrabold mr-32 text-green-700">Enter a world of <span className="text-yellow-500">Photos</span> & Amazing <span className="text-yellow-500">Awards</span></h1>
+      <div>
+        <div className="absolute bottom-96 md:bottom-64 text-center border-b-2 ml-5 md:ml-20 mr-5 md:mr-20 pb-5">
+          <h1 className="text-2xl md:text-6xl lg:text-6xl xl:text-6xl md:ml-28 ml-3 font-extrabold mr-3 md:mr-28 text-green-700">Enter a world of <span className="text-yellow-500">Photography</span> & <span className="text-yellow-500">Cinematography</span></h1>
         </div>
       </div>
+        <div className="absolute bottom-72 md:bottom-48 text-center ml-5 mr-5 md:ml-24 md:mr-24">
+          <h1 className="text-white ml-5 md:ml-32 mr-5 md:mr-32">Atech Media Studio is a professional photography studio that captures your favourite moment and gives you lovely experience...</h1>
+        </div>
     </>
   )
 }
